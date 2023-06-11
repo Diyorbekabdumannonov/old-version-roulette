@@ -1,1 +1,147 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "custom";
+    src: url("./assets/font/BrownMedium\ Regular.ttf");
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: custom, sans-serif;
+    background-color: #44201f;
+    overflow-x: hidden;
+}
+
+.logo {
+    width: 130px;
+    height: auto;
+}
+
+.app {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    max-width: 540px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+canvas {
+    margin-top: -68px;
+    margin-left: -30px;
+    width: 600px;
+    z-index: 555;
+    font-size: 200px !important;
+    font-family: custom, sans-serif !important;
+}
+
+.marker {
+    position: absolute;
+    top: 37%;
+    margin-right: -20px;
+    z-index: 1;
+    right: 0;
+}
+
+.prize1 {
+    width: 75%;
+    position: absolute;
+    top: 0%;
+    right: -36%;
+    z-index: -1;
+}
+
+.prize2 {
+    width: 66%;
+    position: absolute;
+    right: -10%;
+    z-index: 4;
+    bottom: 0;
+}
+
+.btnContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shadow {
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    z-index: 8888;
+    left: -68px;
+}
+
+.line div {
+    border: 20px solid white;
+    border-radius: 100%;
+    width: 101%;
+    height: 101%;
+    margin-top: -22px;
+    margin-left: -22px;
+}
+
+.line {
+    border: 26px solid #000;
+    border-radius: 100%;
+    position: absolute;
+    top: 30px;
+    margin-top: -24px;
+    margin-left: -183px;
+    width: 493px;
+    height: 80%;
+    z-index: 1;
+}
+
+.spin {
+    color: #FFFFFF;
+    background-color: #f6c31b;
+    width: 40%;
+    border-radius: 3px;
+    text-transform: uppercase;
+    border: none;
+    height: 45px;
+    font-size: 16px;
+    font-weight: 700;
+    margin: auto;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.line {
+    border: 26px solid #000;
+    border-radius: 100%;
+    position: absolute;
+    top: 30px;
+    margin-top: -24px;
+    margin-left: 8px;
+    width: 477px;
+    height: 468px;
+    z-index: 1;
+}
+
+.line div {
+
+    margin-left: -22px;
+}
+
+.bounce {
+    animation: bounce 0.6s;
+}
+
+@keyframes bounce {
+    0% {
+        transform: rotate(360deg)
+    }
+
+    50% {
+        transform: rotate(300deg)
+    }
+
+    51% {
+        transform: rotate(360deg)
+    }
+}
