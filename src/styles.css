@@ -1,12 +1,7 @@
-@font-face {
-    font-family: "custom";
-    src: url("./assets/font/BrownMedium\ Regular.ttf");
-}
-
 body {
     padding: 0;
     margin: 0;
-    font-family: custom, sans-serif;
+    font-family: sans-serif;
     background-color: #44201f;
     overflow-x: hidden;
 }
